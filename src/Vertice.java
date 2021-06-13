@@ -1,7 +1,7 @@
 public class Vertice {
-    private double x;
-    private double y;
-    private double z;
+    double x;
+    double y;
+    double z;
 
     public Vertice(double x, double y, double z) {
         this.x = x * 30;
