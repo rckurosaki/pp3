@@ -1,7 +1,7 @@
 # Projeto Prático 3
 
 Projeto Prático 3 (PP3) da disciplina Processamento Gráfico do curso de Ciências da Computação da Universidade Federal de São Carlos campus Sorocaba.
-Ministrada pela Profº Drº Mário Liziér.
+Ministrada pelo Profº Drº Mário Liziér.
 
 ### Integrantes do grupo:
 - Gabriel de Paula e Lima - 587710
@@ -27,13 +27,13 @@ Desenvolvemos utilizando a IDE IntelliJ e para rodar o projeto basta abri-lo nes
 Também é possível rodar diretamente pelo terminal, nesse caso basta entrar na pasta src e executar os comandos abaixo:
 
 ```java
-javac Face.java Vertice.java ObjLoader.java Matriz.java Main.vava 
+javac Face.java Vertice.java ObjLoader.java Matriz.java Main.java 
 ```
 ```java
 java Main 
 ```
 
-Se tudo ocorrer certo, será aberto uma nova janela exibindo o objeto 3D.
+Se tudo ocorrer certo, será aberto uma janela exibindo o objeto 3D.
 
 # Desenvolvimento e implementação
 
@@ -42,12 +42,12 @@ iniciamos criando classes para facilitar essa representação e também criamos 
 Essa classe tem responsabilidade de ler o arquivo do objeto 3D, instânciar vértices e inclui-los em uma lista de faces 
 referentes aos valores obtidos nesse arquivo. Após esse carregamento, a lista de faces que representa o objeto 3D é retornada.
 
-Para efetuar a manipulação do objeto nos eixos x e y, utilizamos matrizes "in-code" e criamos a classe Matriz para auxiliar na multiplicação e transformação 
+Para efetuar a manipulação do objeto nos eixos x e y, utilizamos matrizes *in-code* e criamos a classe Matriz para auxiliar na multiplicação e transformação 
 da lista de vértices. A ideia aqui também foi pré computar a multiplicação de matriz para utilizar na rotação esquerda-direita e cima-baixo.
 Interligamos os métodos da transformação aos sliders que são instânciados na criação da janela.
 
 Para a coloração do objeto (coloração das faces) utilizamos a ideia de rasterização por coordenadas baricêntricas, onde computamos
-coordenadas para cada `pixel` que estão dentro de cada face até colorir todas.
+coordenadas para cada *pixel* que estão dentro de cada face até colorir todas.
 
 
 
